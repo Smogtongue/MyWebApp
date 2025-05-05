@@ -16,7 +16,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet Restore
     - name: Build the application
-      run: dotnet build --configuration Release --no-Restore
+      run: dotnet build --configuration Release --no-restore
     - name: Run tests
       run: dotnet test --no-restore --verbosity normal
 
